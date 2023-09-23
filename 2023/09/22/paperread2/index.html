@@ -6,16 +6,21 @@
   
   <title>Paper Reading 2 - Programmable In-Memory Computing Circuit for Solving Combinatorial Matrix Operation in One Step | Tianyu Fang | Welcome!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="⭐ Only for self-study and revision summaries">
+  <meta name="description" content="⭐ Only for self-study and revision summaries Basics  ▲ Computing in Memory (CIM)· Computing Near Memory: The omputational operations are performed by a separate computing chip or module located outsid">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Paper Reading 2 - Programmable In-Memory Computing Circuit for Solving Combinatorial Matrix Operation in One Step">
 <meta property="og:url" content="https://cynthia-fang25.github.io/2023/09/22/paperread2/index.html">
 <meta property="og:site_name" content="Tianyu Fang | Welcome!">
-<meta property="og:description" content="⭐ Only for self-study and revision summaries">
+<meta property="og:description" content="⭐ Only for self-study and revision summaries Basics  ▲ Computing in Memory (CIM)· Computing Near Memory: The omputational operations are performed by a separate computing chip or module located outsid">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://cynthia-fang25.github.io/pics/3.png">
+<meta property="og:image" content="https://cynthia-fang25.github.io/pics/3-1.png">
+<meta property="og:image" content="https://cynthia-fang25.github.io/pics/3-7.png">
+<meta property="og:image" content="https://cynthia-fang25.github.io/pics/3-3.png">
+<meta property="og:image" content="https://cynthia-fang25.github.io/pics/3-4.png">
+<meta property="og:image" content="https://cynthia-fang25.github.io/pics/3-5.png">
 <meta property="article:published_time" content="2023-09-22T05:34:44.348Z">
-<meta property="article:modified_time" content="2023-09-22T05:40:24.208Z">
+<meta property="article:modified_time" content="2023-09-23T05:04:17.106Z">
 <meta property="article:author" content="Tianyu Fang">
 <meta property="article:tag" content="blog">
 <meta name="twitter:card" content="summary">
@@ -105,6 +110,41 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h4 id="⭐-Only-for-self-study-and-revision-summaries"><a href="#⭐-Only-for-self-study-and-revision-summaries" class="headerlink" title="⭐ Only for self-study and revision summaries"></a>⭐ Only for self-study and revision summaries</h4><p><img src="/pics/3.png" alt=" "></p>
+<pre><code>Basics
+</code></pre>
+<p>▲ Computing in Memory (CIM)<br>· Computing Near Memory: The omputational operations are performed by a separate computing chip or module located outside the storage area.<br>· Computing In Memory: The computational operations are performed by separate computational units located inside the storage area, and the storage and computation may be analogue or digital.</p>
+<blockquote>
+<p>Computing Near Memory is like<br>‘ The shortest distance between two points is a straight line’,<br>students need to find a straight and also the fastest way,<br>to get from the dormitory to the classroom. </p>
+<p>Computing In Memory is like<br>dormitory and classroom are in the same building. </p>
+</blockquote>
+<p>· Processing With Memory<br>· Logic In Memory</p>
+<p>▲ Memory Resistor&#x2F;Memristor(M)<br>· Easy-to-understand Explanations: <a target="_blank" rel="noopener" href="https://www.zhihu.com/question/53208537/answer/767350345?utm_campaign=&utm_medium=social&utm_oi=1216876560470749184&utm_psn=1688850507391676416&utm_source=zhihu" download="CV--FTY.pdf">Link</a></p>
+<p><img src="/pics/3-1.png" alt=" "></p>
+<p>· Predominances: Non-volatile, shrinkage (integration density 4F-squared), fast read&#x2F;write speeds (10ps-1ns), low power consumption (&lt;1nJ), etc.<br>· Synthesis Column Information: <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/kczhu1995-lanzalab" download="CV--FTY.pdf">Link</a></p>
+<p>▲ Sylvester Equation</p>
+<p>▲ Zero-shot Learning</p>
+<pre><code>Background (contrarily, novelty)
+</code></pre>
+<p>▲ Optimization methods for solving matrix operations still have limitations</p>
+<p>▲ The use of memristor circuits to solve matrix operations is a breakthrough, but still not solved:<br>i) completely parallel programming with memristors;<br>ii) combinatorial matrix operations in practical engineering</p>
+<pre><code>Related Work (Derivations &amp; Extensions)
+</code></pre>
+<blockquote>
+<p>▲ Circuit Design:  N-th basic Order Matrix Multiplication<br>C &#x3D;A · B → A · X &#x3D; B<br>(multiplicative inverse)</p>
+</blockquote>
+<blockquote>
+<p>▲ N-th Order Matrix Multiplication<br>Basic → Combinatorial<br>A · X − B · Y &#x3D; C<br>A · X · B &#x3D; C<br>A · X + X · B &#x3D; C</p>
+</blockquote>
+<p><img src="/pics/3-7.png" alt=" "></p>
+<pre><code>Evaluation 
+</code></pre>
+<p>▲ The actual matrix operation circuit experiment on breadboard: justify the practicality of the proposed circuit</p>
+<p>▲ Designed memristor circuits outperform FPGA, CPU, GPU in several forms of combinatorial matrix operations</p>
+<p>▲ Solving matrix operations:<br>designed circuit VS MATLAB and Dev-C++</p>
+<p>▲ Compare the accuracy and time required to solve different matrix operations from 2-th to 1000-th order</p>
+<p><img src="/pics/3-3.png" alt=" "></p>
+<p>▲ Robustness analysis: Average accuracy rates of circuits solving matrix operations with memristor error and operational amplifier error</p>
+<p><img src="/pics/3-4.png" alt=" "><br><img src="/pics/3-5.png" alt=" "></p>
 
       
     </div>
