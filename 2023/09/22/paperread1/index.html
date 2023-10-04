@@ -6,16 +6,21 @@
   
   <title>Paper Reading 1 - A Principled Approach to Selective Context Sensitivity for Pointer Analysis | Tianyu Fang | Welcome!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="⭐ Only for self-study and revision summaries Basics  ▲·     Background  ▲·  Related Work  ▲·">
+  <meta name="description" content="⭐ Only for self-study and revision summaries Basics (JAVA)  ▲ Context Sensitivity▲ Pointer Analysis &amp; Static Analyses· 2-object-sensitive highly-precise conventional context-sensitive pointer anal">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Paper Reading 1 - A Principled Approach to Selective Context Sensitivity for Pointer Analysis">
 <meta property="og:url" content="https://cynthia-fang25.github.io/2023/09/22/paperread1/index.html">
 <meta property="og:site_name" content="Tianyu Fang | Welcome!">
-<meta property="og:description" content="⭐ Only for self-study and revision summaries Basics  ▲·     Background  ▲·  Related Work  ▲·">
+<meta property="og:description" content="⭐ Only for self-study and revision summaries Basics (JAVA)  ▲ Context Sensitivity▲ Pointer Analysis &amp; Static Analyses· 2-object-sensitive highly-precise conventional context-sensitive pointer anal">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://cynthia-fang25.github.io/pics/2.png">
+<meta property="og:image" content="https://cynthia-fang25.github.io/pics/3-3-1.png">
+<meta property="og:image" content="https://cynthia-fang25.github.io/pics/3-3-2.png">
+<meta property="og:image" content="https://cynthia-fang25.github.io/pics/3-3-3.png">
+<meta property="og:image" content="https://cynthia-fang25.github.io/pics/3-3-4.png">
+<meta property="og:image" content="https://cynthia-fang25.github.io/pics/3-3-5.png">
 <meta property="article:published_time" content="2023-09-22T05:01:13.835Z">
-<meta property="article:modified_time" content="2023-10-04T07:27:51.791Z">
+<meta property="article:modified_time" content="2023-10-04T11:20:07.442Z">
 <meta property="article:author" content="Tianyu Fang">
 <meta property="article:tag" content="blog">
 <meta name="twitter:card" content="summary">
@@ -105,15 +110,20 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h4 id="⭐-Only-for-self-study-and-revision-summaries"><a href="#⭐-Only-for-self-study-and-revision-summaries" class="headerlink" title="⭐ Only for self-study and revision summaries"></a>⭐ Only for self-study and revision summaries</h4><p><img src="/pics/2.png" alt=" "></p>
-<pre><code>Basics
+<pre><code>Basics (JAVA)
 </code></pre>
-<p>▲<br>·    </p>
+<p>▲ Context Sensitivity<br>▲ Pointer Analysis &amp; Static Analyses<br>· 2-object-sensitive highly-precise conventional context-sensitive pointer analysis (2-object-sensitive with a context-sensitive heap, 2obj for short)</p>
 <pre><code>Background
 </code></pre>
-<p>▲<br>· </p>
-<pre><code>Related Work
+<p>▲ Existing techniques are based on heuristics that do not<br>provide much insight into what characterizes the subset.<br>▲ Context sensitivity has high accuracy, but efficiency costs too much and consumes too much space and time.</p>
+<pre><code>Related Work (Innovation &amp; Extensions)
 </code></pre>
-<p>▲<br>· </p>
+<p>▲ Section 2: A short literature review and current Context-Sensitive Pointer Analysis Java trend dscription</p>
+<p>▲ Section 3: 3 general patterns of value flow that explain how and where most imprecision is introduced in context-insensitive pointer analysis<br><img src="/pics/3-3-1.png" alt=" "></p>
+<p>▲ Section 4 &amp; Section 5 (core parts):<br>· Section 4: Zipper<br>Effectively identifies 3 general patterns of value flow and thus identifies precision-critical approaches that benefit from context sensitivity<br>→ It makes pointer analysis run faster while maintaining most accuracy.<br><img src="/pics/3-3-2.png" alt=" "><br>· Section 5: Zipper → Zipper express [Zippere(e)]<br>But the cost of analysis is additionally considered when choosing a method for context-sensitive analysis.<br>→ It makes pointer analysis run faster while maintaining higher accuracy.<br><img src="/pics/3-3-3.png" alt=" "><br>· Both Zipper and Zippere(e) require opaque machine learning or other tweaks to multiple complex analysis parameters.</p>
+<p>▲ Section 6: Extensive experiments evaluate the effectiveness of Zipper and Zipper(e) with RQ1, RQ2, RQ3, RQ4 and RQ5<br>· RQ1 → RQ4: Further investigate whether Zipper (and its underlying precision-loss principle) can preserve most of the precision also for other context-sensitivity variants<br>(Whether its precision loss pattern is common enough to effectively identify precision to preserve the accuracy of other mainstream context-sensitive variants, including call site sensitivity, type sensitivity, and mixed context sensitivity)<br><img src="/pics/3-3-4.png" alt=" "></p>
+<p>· RQ5: Evaluate the efficiency and accuracy of Zippere(e)<br><img src="/pics/3-3-5.png" alt=" "></p>
+<p>Ongoing refinement…</p>
 
       
     </div>
@@ -181,7 +191,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li></ul>
     </div>
   </div>
 
@@ -194,6 +204,14 @@
       <ul>
         
           <li>
+            <a href="/2023/10/04/paperread3/">Paper Reading 3 - Multi-Beam Design for Near-Field Extremely Large-Scale RIS-Aided Wireless Communications</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/04/paperread4/">Paper Reading 4 - Accurate and efficient molecular dynamics based on machine learning and non von Neumann</a>
+          </li>
+        
+          <li>
             <a href="/2023/09/23/Newest/">About me</a>
           </li>
         
@@ -203,14 +221,6 @@
         
           <li>
             <a href="/2023/09/22/paperread2/">Paper Reading 2 - Programmable In-Memory Computing Circuit for Solving Combinatorial Matrix Operation in One Step</a>
-          </li>
-        
-          <li>
-            <a href="/2023/09/22/paperread1/">Paper Reading 1 - A Principled Approach to Selective Context Sensitivity for Pointer Analysis</a>
-          </li>
-        
-          <li>
-            <a href="/2023/09/20/my_blog/">Relevant Applications of Matrix in EE</a>
           </li>
         
       </ul>
